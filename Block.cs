@@ -11,16 +11,13 @@ namespace Blockchain
         private long timeStamp;
         private int nonce;
 
-        DateTime baseDate = new DateTime(1970, 1, 1);
-
         public Block(string data, string previousHash)
         {
             this.data = data;
             this.previousHash = previousHash;
 
 
-            TimeSpan diff = DateTime.Now - baseDate;
-            this.timeStamp = (long)(diff.TotalMilliseconds);
+            this.timeStamp = DateTime.Now.Ticks;
 
             this.hash = CalculateHash();
 

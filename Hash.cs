@@ -10,7 +10,7 @@ namespace Blockchain
         public static string GetHashSha256(string text)
         // TAKES A STRING AND APPLIES SHA256 TO IT
         {
-            byte[] bytes = Encoding.UTF8.GetBytes(text); //NOT Encoding.Unicsode.GetBytes...
+            byte[] bytes = Encoding.UTF8.GetBytes(text); //NOT Encoding.Unicode.GetBytes...
             SHA256Managed hashstring = new SHA256Managed();
             byte[] hash = hashstring.ComputeHash(bytes);
             string hashString = string.Empty;
