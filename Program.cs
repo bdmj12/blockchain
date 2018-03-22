@@ -6,7 +6,7 @@ namespace Blockchain
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello to you too Ji!");
+            Console.WriteLine("Hello to you too, Ji!");
         }
     }
 }
