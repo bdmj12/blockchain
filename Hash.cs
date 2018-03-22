@@ -5,7 +5,7 @@ using System.Text;
 namespace Blockchain
 {
 
-    public class Hash
+    public static class Hash
     {
         public static string GetHashSha256(string text)
         // TAKES A STRING AND APPLIES SHA256 TO IT
