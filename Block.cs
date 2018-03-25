@@ -38,6 +38,7 @@ namespace Blockchain
             string target = new string(new char[difficulty]).Replace("\0", "0");
             while(!hash.Substring(0,difficulty).Equals(target)){
                 nonce++;
+                //Console.WriteLine(nonce);
                 hash = CalculateHash();
             }
             Console.WriteLine("Block Mined! : " + hash);

@@ -31,10 +31,14 @@ namespace Blockchain
 
             var person1 = new Wallet();
 
-            person1.Encrypt("")
+            person1.Encrypt("");
 
             // var blockchainJson = JsonConvert.SerializeObject(blockchain);
            //  Console.WriteLine(blockchainJson);
+
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
+            
         }
 
 
