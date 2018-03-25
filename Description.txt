@@ -1,29 +1,45 @@
 ﻿This file will hopefully help in keeping track of the 'bigger picture' of the project, and breaking down the individual components.
 
 
-Block:					Each block contains 4 main pieces of information: data, previous hash, timestamp (time at creation), hash.
+Block:					
+						Each block contains 4 main pieces of information: data, previous hash, timestamp (time at creation), hash.
 						The block's constructor takes it's new data, and the previous block's hash.
 
-Blockchain:				An 'arraylist' of blocks. When a new block is created it is added to the blockchain (after mining).
 
 
-Hash:					The hash is just a function taking strings to strings. 
+Blockchain:				
+						An 'arraylist' of blocks. When a new block is created it is added to the blockchain (after mining).
+
+
+
+
+Hash:					
+						The hash is just a function taking strings to strings. 
 						Hash functions are defined by being easy to compute, but very hard to 'undo', 
 						i.e. we can calculate any hashes easily, but given a hash, it's near impossible to find the original input.
-
 						The input for our hash is the string concatenation of all the relevant data: previous hash, timestamp, data.
 
-IsChainValid():			A method to check the blockchain has not been tampered with, 
+
+
+IsChainValid():			
+
+						A method to check the blockchain has not been tampered with, 
 						i.e. loops through the blockchain from the beginning and checks if the hashes match
 						(costly process as the blockchain grows???)		
 
 
-Mining:					A block is created, but then must be 'mined' before being added to the blockchain. 
+
+
+Mining:					
+						A block is created, but then must be 'mined' before being added to the blockchain. 
 						This is done by searching for the value (nonce) that when included in the hash,
 						gives a hash with a certain number of zeroes at the start.
 
 						The idea is that 'work' has to be done to create a block, giving an incentive to 'miners'.
 
 
-Wallet:					Has a private key (used to verify identity) and public key (our 'address').
+
+
+Wallet:					
+						Has a private key (used to verify identity) and public key (our 'address').
 						Private and public keys are generated together (Elliptic Curves!).
