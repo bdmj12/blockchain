@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using Newtonsoft.Json;
 
 namespace Blockchain
 {
@@ -7,7 +8,7 @@ namespace Blockchain
     {
 
         public static List<Block> blockchain = new List<Block>();
-        public static int difficulty = 4;
+        public static int difficulty = 2;
 
         public static void Main(string[] args)
 
@@ -28,9 +29,16 @@ namespace Blockchain
 
             Console.WriteLine("\nBlockchain is Valid: " + IsChainValid());
 
+            var person1 = new Wallet();
 
-            // Json???
+            person1.Encrypt("");
 
+            // var blockchainJson = JsonConvert.SerializeObject(blockchain);
+           //  Console.WriteLine(blockchainJson);
+
+            Console.WriteLine("Press any key to exit...");
+            Console.ReadKey();
+            
         }
 
 
