@@ -1,8 +1,0 @@
-C:\Users\ben_j\Source\Repos\blockchain\obj\x86\Debug\Blockchain.csprojResolveAssemblyReference.cache
-C:\Users\ben_j\Source\Repos\blockchain\obj\x86\Debug\Blockchain.csproj.CoreCompileInputs.cache
-C:\Users\ben_j\Source\Repos\blockchain\bin\Debug\Blockchain.exe
-C:\Users\ben_j\Source\Repos\blockchain\bin\Debug\Blockchain.pdb
-C:\Users\ben_j\Source\Repos\blockchain\bin\Debug\Newtonsoft.Json.dll
-C:\Users\ben_j\Source\Repos\blockchain\obj\x86\Debug\Blockchain.csproj.CopyComplete
-C:\Users\ben_j\Source\Repos\blockchain\obj\x86\Debug\Blockchain.exe
-C:\Users\ben_j\Source\Repos\blockchain\obj\x86\Debug\Blockchain.pdb
